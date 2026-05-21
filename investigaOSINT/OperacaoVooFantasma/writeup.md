@@ -62,7 +62,7 @@ IDeeqdx Dorsdhm
 
 Obtém-se:
 
-![revelation](./assets/real-name-revelation.png)
+![revelation](./assets/realname-revelation.png)
 
 ```txt
 Jeffrey Epstein
