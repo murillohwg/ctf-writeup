@@ -1,6 +1,6 @@
 # Writeup — CTF OSINT/GEOINT: "A Marcação que Entregou Tudo"
 
-![Certificado](./docs/certified.png) 
+![Certificado](./assets/certified.png) 
 
 ## Descrição do desafio
 
@@ -29,7 +29,7 @@ FLAG{XXXXXX_XXXXX_XXXXX}
 # Objetivo
 
 Identificar o local exato onde a fotografia foi tirada utilizando técnicas de GEOINT/OSINT.
-![image](./docs/image.png) 
+![image](./assets/image.png) 
 fotografia
 
 ---
