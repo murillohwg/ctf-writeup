@@ -1,10 +1,12 @@
 # Writeup — CTF OSINT: “Encontre seu amor”
-
-![Certificado](./images/certified.png)
+>
+![Certificado](./assets/certified.png)
 
 ## Descrição do desafio
 
 O desafio apresentava um suposto site de relacionamentos que voltou a circular em fóruns e redes sociais.
+
+![imagesCTF](./assets/imagemCTF.png)
 
 A missão era identificar:
 
@@ -42,6 +44,8 @@ amorespossiveis.com.br
 ```
 
 A consulta WHOIS revelou informações importantes:
+
+![WHOIS](./assets/REGISTROBR.png)
 
 ```text
 Titular: Gabriel Machado Badan
@@ -99,6 +103,7 @@ Pesquisando:
 ```text
 amorespossiveis.com.br
 ```
+![Wayback-machine](./assets/PesquisandoPossivelDATA.png)
 
 foi possível visualizar o histórico arquivado do domínio.
 
@@ -110,11 +115,15 @@ Ao navegar até 2005, apareceu o primeiro snapshot disponível:
 
 Essa captura mostrava a página inicial hospedada no provedor:
 
+![DATA](./assets/PossivelDATA.png)
+
 ```text
 Iphotel Hospedagem Profissional
 ```
 
 com a mensagem:
+
+![confirmacao](./assets/ConfirmacaoDeDEPLOY.png)
 
 ```text
 “Seu site já está ativo”
