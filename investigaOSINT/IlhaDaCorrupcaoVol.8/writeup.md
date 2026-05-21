@@ -48,7 +48,7 @@ Chegamos a:
 
 * **Sigmundur Davíð Gunnlaugsson** (ex-primeiro-ministro da Islândia)
 
-[img1](./assets/IMGA.png)
+[img1](/assets/IMGA.png)
 
 Confirmado por:
 
@@ -121,7 +121,7 @@ O CTF utilizava a versão alemã do documento, que indicava:
 
 > **9 de outubro de 2007**
 
-[img2](./assets/IMGB.png)
+[img2](/assets/IMGB.png)
 
 ---
 
