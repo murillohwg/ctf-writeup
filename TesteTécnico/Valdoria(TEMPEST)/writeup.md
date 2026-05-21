@@ -5,6 +5,7 @@ This repository documents the analysis and exploitation process of a CTF-style t
 The objective was to investigate the target application, identify vulnerabilities, and obtain access to restricted administrative resources.
 
 ---
+
 # Skills Demonstrated
 
 • Web Application Security Testing  
@@ -14,6 +15,7 @@ The objective was to investigate the target application, identify vulnerabilitie
 • Custom Python Automation  
 
 ---
+
 # Tools Used
 
 - Burp Suite
@@ -22,6 +24,7 @@ The objective was to investigate the target application, identify vulnerabilitie
 - Browser DevTools
 
 ---
+
 # Vulnerabilities Identified
 
 ### 1. Confidential File Discovery
@@ -51,6 +54,7 @@ The application used JSON Web Tokens (JWT) for authentication.
 
 However, the backend failed to properly validate the token signature.
 
+
 By modifying the token header algorithm to **"none"**, it was possible to craft a token with administrative privileges.
 
 ![flag2](./assets/FLAG2.png) 
@@ -73,6 +77,7 @@ Payload
 This allowed unauthorized access to internal data exposed by the administrative dashboard.
 
 ---
+
 # Evidence
 
 Screenshots demonstrating the exploitation process are available in the **screenshots/** directory.
@@ -84,6 +89,7 @@ Examples include:
 - Intercepted HTTP requests
 
 ---
+
 # Lessons Learned
 
 This challenge reinforced several important security concepts:
