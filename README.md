@@ -7,11 +7,7 @@
 ![OSINT](https://img.shields.io/badge/Focus-OSINT-blue?style=for-the-badge)
 ![Web Security](https://img.shields.io/badge/Web-Security-orange?style=for-the-badge)
 # CTF Writeups
-
-Repositório de índice com todos os meus writeups de CTF, organizados por categoria.
-Cada link leva ao repositório completo com documentação (PT/EN).
-
-## Categorias
+> Categorias
 
 | #  |          CTF            | Plataforma    | Categoria    |                                       Repositório                                                                         |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
