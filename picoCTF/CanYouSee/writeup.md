@@ -15,7 +15,7 @@ ukn_reality.jpg
 
 The first step was simply opening the image.
 
-![image](assets/1-ctf-image.png)
+![image](assets/1-ctf-image.jpg)
 
 Nothing suspicious was visible directly in the image, so the next step was checking the metadata.
 
