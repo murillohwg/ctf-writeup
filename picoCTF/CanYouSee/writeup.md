@@ -71,4 +71,4 @@ picoCTF{ME74D47A_H1DD3N_6a9f5ac4}
 
 - Metadata fields can hide sensitive or important information.
 - `exiftool` is extremely useful for forensic and steganography-related CTF challenges.
-- Base64 is commonly used to obfuscate flags in beginner challenges.
+- Base64 is commonly used to obfuscate flags in challenges.
