@@ -7,7 +7,7 @@
 ![OSINT](https://img.shields.io/badge/Focus-OSINT-blue?style=for-the-badge)
 ![Web Security](https://img.shields.io/badge/Web-Security-orange?style=for-the-badge)
 # CTF Writeups
-> Índice
+> Index
 
 | #  |          CTF            | Plataforma    | Categoria    |                                       Repositório                                                                         |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
