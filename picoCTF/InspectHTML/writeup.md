@@ -21,7 +21,7 @@ The page looked completely normal:
 - Basic HTML structure
 - No forms or inputs
 - No JavaScript functionality
-- No visible hidden content
+- No visible content
 
 Since this was a beginner web challenge, the next logical step was to inspect the page source.
 
