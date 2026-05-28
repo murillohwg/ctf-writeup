@@ -1,3 +1,6 @@
+![Platform](https://img.shields.io/badge/platform-picoCTF-blue)
+![Category](https://img.shields.io/badge/category-Web%20Exploitation-orange)
+![Status](https://img.shields.io/badge/status-Solved-success)
 # WriteUp - Inspect HTML
 > Web exploitation - source-code
 ---
