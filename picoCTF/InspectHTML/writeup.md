@@ -59,9 +59,7 @@ picoCTF{in5p3t0r_0f_h7ml_8113f7e2}
 
 ---
 
-## What This Challenge Teaches
-
-This challenge demonstrates a very common beginner concept in Web Exploitation:
+## Concepts
 
 > Always inspect the source code.
 
