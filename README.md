@@ -25,6 +25,6 @@
 | 12 | Old Sessions            | picoCTF       | Web(tokens)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
 | 13 | SSTI1                   | picoCTF       | Web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
 | 14 | CanYouSee               | picoCTF       | Forensics(metadata)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/CanYouSee/writeup.md)                     |
-| 15 | Inpesct-HTML            | picoCTF       | Web          |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/InspectHTML/writeup.md)                            |
+| 15 | InspectHTML            | picoCTF       | Web          |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/InspectHTML/writeup.md)                            |
 
 ---
