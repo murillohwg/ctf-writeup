@@ -1,4 +1,4 @@
-# WriteUp - head dump
+# WriteUp - heap dump
 > Web Explotation - API misconfiguration
 
 ## Challenge Description
