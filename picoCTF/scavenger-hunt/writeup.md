@@ -68,7 +68,7 @@ Many parts in differents modules show hints, so I need to use them.
 
 ---
 
-### Part 5 — .DS_Store File
+### Part 6 — .DS_Store File
 **Method:** Accessing `/.DS_Store` directly in the browser and downloading the file  
 **Location:** Hidden macOS metadata file accidentally uploaded by the developer  
 **Found**
