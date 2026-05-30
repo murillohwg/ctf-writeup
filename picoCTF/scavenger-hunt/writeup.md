@@ -54,7 +54,7 @@ Many parts in differents modules show hints, so I need to use them.
 **Location:** `Disallow` entries revealing hidden paths 
 **Found**
 ![flag3](assets/4-idor-robots-flag-thirdpart.png)
-**Hint:** CSS comment referencing Google indexing  
+**Hint:** `# I think this is an apache server... can you Access the next flag?` 
 **Fragment:** third part of the flag
 
 ---
@@ -64,7 +64,7 @@ Many parts in differents modules show hints, so I need to use them.
 **Location:** Contents of the exposed configuration file  
 **Found**
 ![flag4](assets/5-htaccess-file-flag-fourthpart.png)
-**Hint:** `# I think this is an apache server... can you Access the next flag?`  
+**Hint:** `" I love making websites on my Mac, I can Store a lot of information there."`   
 **Fragment:** fourth part of the flag
 
 ---
@@ -74,7 +74,6 @@ Many parts in differents modules show hints, so I need to use them.
 **Location:** Hidden macOS metadata file accidentally uploaded by the developer  
 **Found**
 ![flag4](assets/7-DS-Store-flag-fivepart.png)
-**Hint:** `" I love making websites on my Mac, I can Store a lot of information there."`  
 **Fragment:** fifth part of the flag
 
 
