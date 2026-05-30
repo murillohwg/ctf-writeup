@@ -81,7 +81,7 @@ Many parts in differents modules show hints, so I need to use them.
 ## Completed Flag
 All 5 fragments combined resulted in the final flag:  
 **`picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_9588550}`**
-![flag-complete](assets/7-completed-flag.png)
+![flag-complete](assets/8-completed-flag.png)
 
 ---
 
