@@ -42,7 +42,6 @@ By navigating through the site and inspecting the source code of each page, a su
 ### Step 3 — Decoding with CyberChef
 
 **Method:** Pasting the string into [CyberChef](https://gchq.github.io/CyberChef/) and applying **From Base64**  
-**Location:** [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef/)  
 **Found:**
 
 ![cyberchef-decode](assets/4-decrypt-hash-base64.png)
