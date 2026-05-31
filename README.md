@@ -20,7 +20,7 @@
 | 07 | EncontreSeuAmor         |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/EncontreSeuAmor/writeup.md)                  |
 | 08 | OperaçãoRebranding      |investigaOSINT | FININT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoRebrandingHacendado/writeup.md)      |
 | 09 | NãoSei,PareceFalso      |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/NaoSeiPareceFalso/writeup.md)                |
-| 10 | Shared Secrets          | picoCTF       | Cripto       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/shared-secrets/writeup.md)                          |
+| 10 | Shared Secrets          | picoCTF       | Crypto       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/shared-secrets/writeup.md)                          |
 | 11 | ABSOLUTE NANO           | picoCTF       | Linux PrivEsc| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/absolute-nano/writeup.md)                           |
 | 12 | Old Sessions            | picoCTF       | Web(cookies) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
 | 13 | SSTI1                   | picoCTF       | Web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
