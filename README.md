@@ -11,7 +11,7 @@
 
 | #  |          CTF            | Plataform     | Category     |                                       Repository                                                                          |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 01 | TechnicalTest(Tempest)  | Tempest       | Cripto&Web(JWT)   | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
+| 01 | TechnicalTest(Tempest)  | Tempest       | Crypto & Web(JWT)   | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
 | 02 | HiddenDeepIntoMyHeart   | TryHackMe     | Web(IDOR)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/tryhackme/HiddenDeepIntoMyHeart/writeup.md)                 |
 | 03 | OperaçãoVooFantasma     |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoVooFantasma/writeup.md)              |
 | 04 | MarcaçãoQueEntregouTudo |investigaOSINT | GEOINT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/MarcacaoQueEntregouTudo/writeup.md)          |
@@ -29,6 +29,6 @@
 | 16 | heap dump               | picoCTF       | Web(API)     |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/heap-dump/writeup.md)                              |
 | 17 | unminify                | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/unminify/writeup.md)                                |
 | 18 | scavenger-hunt          | picoCTF       | Web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
-| 19 | web-decode              | picoCTF       | Web & cripto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
+| 19 | web-decode              | picoCTF       | Web & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
 
 ---
