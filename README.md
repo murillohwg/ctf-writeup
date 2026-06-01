@@ -1,10 +1,8 @@
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![CTF](https://img.shields.io/badge/CTF-Writeups-brightgreen?style=for-the-badge)
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-blue?style=for-the-badge)
 ![Pentesting](https://img.shields.io/badge/Pentesting-red?style=for-the-badge)
 ![OSINT](https://img.shields.io/badge/OSINT-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![CTF](https://img.shields.io/badge/CTF-Writeups-red?style=for-the-badge)
-![OSINT](https://img.shields.io/badge/Focus-OSINT-blue?style=for-the-badge)
 ![Web Security](https://img.shields.io/badge/Web-Security-orange?style=for-the-badge)
 # CTF Writeups
 > Index
@@ -31,5 +29,6 @@
 | 18 | scavenger-hunt          | picoCTF       | web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
 | 19 | web-decode              | picoCTF       | web & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
 | 20 | local-authority         | picoCTF       | web(bypass)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/local-authority/writeup.md)                         |
+| 21 | logon                   | picoCTF       | web(PrivEsc)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/logon/writeup.md)                                  |
 
 ---
