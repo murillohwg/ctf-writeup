@@ -20,7 +20,7 @@
 | 09 | NãoSei,PareceFalso      |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/NaoSeiPareceFalso/writeup.md)                |
 | 10 | Shared Secrets          | picoCTF       | crypto       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/shared-secrets/writeup.md)                          |
 | 11 | ABSOLUTE NANO           | picoCTF       | linux PrivEsc| [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/absolute-nano/writeup.md)                           |
-| 12 | Old Sessions            | picoCTF       | web(cookies) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                            |
+| 12 | Old Sessions            | picoCTF       | web(hijacking) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/old-sessions/writeup.md)                          |
 | 13 | SSTI1                   | picoCTF       | web(SSTI)    |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/ssti1/writeup.md)                                  |
 | 14 | CanYouSee               | picoCTF       | forensics    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/CanYouSee/writeup.md)                               |
 | 15 | InspectHTML             | picoCTF       | web          |  [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/InspectHTML/writeup.md)                            |
@@ -29,6 +29,6 @@
 | 18 | scavenger-hunt          | picoCTF       | web          | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/scavenger-hunt/writeup.md)                          |
 | 19 | web-decode              | picoCTF       | web & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/web-decode/writeup.md)                              |
 | 20 | local-authority         | picoCTF       | web(bypass)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/local-authority/writeup.md)                         |
-| 21 | logon                   | picoCTF       | web(PrivEsc)  | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/logon/writeup.md)                                  |
+| 21 | logon                   | picoCTF       | web(hijacking) | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/picoCTF/logon/writeup.md)                                 |
 
 ---
