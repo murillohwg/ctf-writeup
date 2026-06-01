@@ -3,7 +3,7 @@
 ![Pentesting](https://img.shields.io/badge/Pentesting-red?style=for-the-badge)
 ![OSINT](https://img.shields.io/badge/OSINT-orange?style=for-the-badge)
 ![Web Security](https://img.shields.io/badge/Web-Security-orange?style=for-the-badge)
-# CTF Writeups
+# ctf writeups
 > Index
 
 | #  |          CTF            | Plataform     | Category     |                                       Repository                                                                          |
