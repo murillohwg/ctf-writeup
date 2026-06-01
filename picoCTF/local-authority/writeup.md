@@ -1,5 +1,5 @@
-# Writeup — local authority
-> Web Exploitation - Client-Side Login Bypass
+# Writeup — Local Authority
+> Web Exploitation - client-side login bypass
 
 ## Overview
 
