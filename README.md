@@ -8,7 +8,7 @@
 
 | #  |          CTF            | Plataform     | Category     |                                       Repository                                                                          |
 |--- |-------------------------|---------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 01 | Valdoria(TechnicalTest) | Tempest       | web(jwt) & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
+| 01 | Valdoria(TechnicalChallenge) | Tempest       | web(jwt) & crypto | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/TesteT%C3%A9cnico/Valdoria(TEMPEST)/writeup.md)        |
 | 02 | HiddenDeepIntoMyHeart   | TryHackMe     | web(IDOR)    | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/tryhackme/HiddenDeepIntoMyHeart/writeup.md)                 |
 | 03 | OperaçãoVooFantasma     |investigaOSINT | OSINT        | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/OperacaoVooFantasma/writeup.md)              |
 | 04 | MarcaçãoQueEntregouTudo |investigaOSINT | GEOINT       | [🔗 Link](https://github.com/murillohwg/ctf-writeup/blob/main/investigaOSINT/MarcacaoQueEntregouTudo/writeup.md)          |
