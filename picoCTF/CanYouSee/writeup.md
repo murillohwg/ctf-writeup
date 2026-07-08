@@ -8,7 +8,7 @@
 
 The first step was simply opening the image.
 
-![image](../../.gitbook/assets/1-ctf-image.jpg)
+![image](assets/1-ctf-image.jpg)
 
 Nothing suspicious was visible directly in the image, so the next step was checking the metadata.
 
@@ -24,7 +24,7 @@ exiftool ukn_reality.jpg
 
 Output:
 
-![image](../../.gitbook/assets/2-using-exiftool.png)
+![image](assets/2-using-exiftool.png)
 
 While inspecting the metadata, one field immediately stood out:
 
@@ -46,7 +46,7 @@ echo "cGljb0NURntNRTc0RDQ3QV9ISUREM05fNmE5ZjVhYzR9Cg==" | base64 -d
 
 Result:
 
-![image](../../.gitbook/assets/3-decode-base64-found-FLAG.png)
+![image](assets/3-decode-base64-found-FLAG.png)
 
 The decoded output revealed the flag.
 
