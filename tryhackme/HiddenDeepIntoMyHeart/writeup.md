@@ -30,7 +30,7 @@ A structured approach was used to solve the challenge:
 
 After connecting to the TryHackMe VPN, the target machine became accessible via a private IP address (`10.67.184.5`) and a specific port.
 
-![HOMEPAGE](../../.gitbook/assets/home-page.png)
+![HOMEPAGE](assets/home-page.png)
 
 Initial access was performed through a web browser.
 
@@ -40,7 +40,7 @@ Initial access was performed through a web browser.
 
 Directory and file brute-forcing was performed using `gobuster`:
 
-![gobuster](../../.gitbook/assets/gobuster-wordlist.png)
+![gobuster](assets/gobuster-wordlist.png)
 
 ```bash
 gobuster dir -u http://10.67.184.5:5000/ \
@@ -56,7 +56,7 @@ The use of file extensions (`-x`) enabled the discovery of hidden files in addit
 
 During enumeration, the following file was discovered:
 
-![robotstxt](../../.gitbook/assets/robotstxt-dir.png)
+![robotstxt](assets/robotstxt-dir.png)
 
 ```bash
 /robots.txt
@@ -74,7 +74,7 @@ The content revealed a string that was later used as a valid password.
 
 Further enumeration revealed an administrative endpoint:
 
-![loginpage](../../.gitbook/assets/login-page.png)
+![loginpage](assets/login-page.png)
 
 ```bash
 /administrator
@@ -88,7 +88,7 @@ Accessing this endpoint presented a login interface.
 
 Using previously gathered information:
 
-![tryinglogin](../../.gitbook/assets/trying-login-page.png)
+![tryinglogin](assets/trying-login-page.png)
 
 * **Username:** `admin`
 * **Password:** extracted from `robots.txt`
@@ -101,6 +101,6 @@ Authentication was successful, granting access to the application.
 
 Upon successful login, the application redirected directly to a page containing the flag.
 
-![flag](../../.gitbook/assets/flag.png)
+![flag](assets/flag.png)
 
 > The flag has been omitted to avoid spoilers.
