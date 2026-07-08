@@ -6,7 +6,7 @@
 
 A web-based CTF challenge focused on finding a flag hidden in the source code of a page, encoded in Base64.
 
-![homepage](assets/1-homepage (3).png>)
+![homepage](assets/1-homepage.png)
 
 ***
 
