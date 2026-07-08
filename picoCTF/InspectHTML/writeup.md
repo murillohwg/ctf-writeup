@@ -14,7 +14,7 @@ When opening the challenge, the website displayed a very simple HTML page contai
 
 At first glance, nothing suspicious appeared on the page itself.
 
-![Homepage](<../../.gitbook/assets/1-homepage (4).png>)
+![Homepage](assets/1-homepage.png)
 
 The challenge behavior suggested that the flag might be hidden somewhere in the webpage source.
 
@@ -47,7 +47,7 @@ I inspected the HTML source code of the page.
 
 Near the bottom of the file, there was an HTML comment containing the flag.
 
-![Source Code](<../../.gitbook/assets/2-source-code (1).png>)
+![Source Code](assets/2-source-code.png)
 
 The following comment revealed the flag:
 
