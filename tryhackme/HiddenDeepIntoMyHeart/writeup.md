@@ -64,7 +64,7 @@ During enumeration, the following file was discovered:
 
 Although typically used to guide search engine crawlers, this file contained sensitive information.
 
-![psswd](../../.gitbook/assets/possivel-psswd.png)
+![psswd](assets/possivel-psswd.png)
 
 The content revealed a string that was later used as a valid password.
 
