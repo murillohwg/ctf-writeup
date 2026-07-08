@@ -1,4 +1,4 @@
-# writeup
+
 
 ![Status](https://img.shields.io/badge/Status-Solved-success) ![Category](https://img.shields.io/badge/Category-Web%20Exploitation-blue) ![Topic](https://img.shields.io/badge/Topic-API%20Misconfiguration-red)
 
@@ -21,7 +21,7 @@ Hints:
 
 The challenge presents a simple news website called **picoCTF News**.
 
-![Homepage](<../../.gitbook/assets/1-homepage (6).png>)
+![Homepage](assets/1-homepage.png)
 
 While browsing the website, one article references API documentation, suggesting that additional functionality may be available through backend endpoints.
 
@@ -29,7 +29,7 @@ While browsing the website, one article references API documentation, suggesting
 
 Inspecting the page source revealed references to API-related resources and documentation.
 
-![Source Code](../../.gitbook/assets/2-source-code.png)
+![Source Code](assets/2-source-code.png)
 
 This indicated that the application exposes a backend API that could be explored further.
 
@@ -37,7 +37,7 @@ This indicated that the application exposes a backend API that could be explored
 
 Navigating to the API documentation endpoint exposed a Swagger interface.
 
-![API Documentation](../../.gitbook/assets/3-api-docs-module.png)
+![API Documentation](assets/3-api-docs-module.png)
 
 The Swagger page listed several available endpoints, including routes for managing blog posts and diagnostic functionality.
 
@@ -49,7 +49,7 @@ Reviewing the available API routes revealed the following modules:
 * `/api/posts/{id}`
 * `/heapdump`
 
-![API Endpoints](../../.gitbook/assets/4-api-posts-module.png)
+![API Endpoints](assets/4-api-posts-module.png)
 
 The endpoint `/heapdump` immediately stood out because of the challenge hint:
 
@@ -69,7 +69,7 @@ The server responded by generating a downloadable file named:
 heapdump.heapsnapshot
 ```
 
-![Heapdump Download](../../.gitbook/assets/5-heapdump-download.png)
+![Heapdump Download](assets/5-heapdump-download.png)
 
 Heap snapshots are commonly used in Node.js applications for debugging memory issues. However, exposing them publicly can leak sensitive information stored in memory.
 
@@ -91,7 +91,7 @@ This quickly located the flag embedded within the heap snapshot contents.
 
 Searching through the heap dump revealed the flag.
 
-![Flag Found](../../.gitbook/assets/6-found-flag.png)
+![Flag Found](assets/6-found-flag.png)
 
 ### Root Cause
 
