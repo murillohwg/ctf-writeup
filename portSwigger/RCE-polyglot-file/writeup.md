@@ -6,7 +6,7 @@
 
 A file upload vulnerability lab where the server correctly blocks direct upload of non-image files (like `.php`), but fails to inspect file _content_ thoroughly. By crafting a polyglot PHP/JPG file — a valid image that also carries a PHP payload hidden inside its metadata — it was possible to bypass the extension/content-type filter and achieve remote code execution, ultimately reading a protected file (`/home/carlos/secret`) from the server's filesystem.
 
-![home-page](../../.gitbook/assets/1-home-page.png)
+![home-page](assets/1-home-page.png)
 
 ***
 
@@ -22,7 +22,7 @@ The initial attempt to upload a raw `.php` file as an avatar was blocked by the 
 
 **Method:** Logging into the application and accessing the account/avatar upload feature **Location:** My Account page **Finding:** The application allows authenticated users to upload a custom avatar image.
 
-![my-account-page](../../.gitbook/assets/2-My-Account-page.png)
+![my-account-page](assets/2-My-Account-page.png)
 
 ***
 
@@ -36,7 +36,7 @@ The initial attempt to upload a raw `.php` file as an avatar was blocked by the 
 
 **Location:** Avatar upload form **Finding:** The server rejected the file, and attempting to access it directly afterward confirmed it was never stored/executed as PHP.
 
-![cant-load-exploit-php](../../.gitbook/assets/3-cant-load-exploit-php.png)
+![cant-load-exploit-php](assets/3-cant-load-exploit-php.png)
 
 **Observation:** The server enforces some form of validation beyond just checking the file extension client-side — a naive rename to `.php` alone wasn't enough.
 
@@ -60,7 +60,7 @@ exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret'
 
 **Method:** Uploading `polyglot.php` as the avatar through the browser, capturing the request in Burp's **HTTP History**, and sending it to **Repeater** to inspect/replay the upload until it was accepted. **Location:** Avatar upload endpoint — `POST` request **Finding:** The server accepted the file this time, since it passed as a legitimate image.
 
-![POST-polyglot-php](../../.gitbook/assets/5-POST-polyglot-php.png)
+![POST-polyglot-php](assets/5-POST-polyglot-php.png)
 
 ***
 
@@ -68,7 +68,7 @@ exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret'
 
 **Method:** Returning to the account page to trigger a `GET /files/avatars/polyglot.php` request, then locating it in Burp's Proxy History and using the message editor's search feature to find the `START` marker within the binary image response. **Location:** `GET /files/avatars/polyglot.php` **Finding:** Between the `START` and `END` markers, Carlos's secret was exposed in plaintext inside the image response body.
 
-![GET-polyglot-php](../../.gitbook/assets/6-GET-polyglot-php.png)
+![GET-polyglot-php](assets/6-GET-polyglot-php.png)
 
 ***
 
