@@ -49,7 +49,7 @@ amorespossiveis.com.br
 
 A consulta WHOIS revelou informações importantes:
 
-![WHOIS](../../.gitbook/assets/REGISTROBR.png)
+![WHOIS](assets/REGISTROBR.png)
 
 ```
 Titular: Gabriel Machado Badan
@@ -108,7 +108,7 @@ Pesquisando:
 amorespossiveis.com.br
 ```
 
-![Wayback-machine](../../.gitbook/assets/PesquisandoPossivelDATA.png)
+![Wayback-machine](assets/PesquisandoPossivelDATA.png)
 
 foi possível visualizar o histórico arquivado do domínio.
 
@@ -120,7 +120,7 @@ Ao navegar até 2005, apareceu o primeiro snapshot disponível:
 
 Essa captura mostrava a página inicial hospedada no provedor:
 
-![DATA](../../.gitbook/assets/PossivelDATA.png)
+![DATA](assets/PossivelDATA.png)
 
 ```
 Iphotel Hospedagem Profissional
@@ -128,7 +128,7 @@ Iphotel Hospedagem Profissional
 
 com a mensagem:
 
-![confirmacao](../../.gitbook/assets/ConfimacaoDeDEPLOY.png)
+![confirmacao](assets/ConfimacaoDeDEPLOY.png)
 
 ```
 “Seu site já está ativo”
