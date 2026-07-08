@@ -4,13 +4,13 @@
 
 >
 
-![Certificado](<../../.gitbook/assets/certified (5).png>)
+![Certificado](assets/certified.png)
 
 ### Descrição do desafio
 
 O desafio apresentava um suposto site de relacionamentos que voltou a circular em fóruns e redes sociais.
 
-![imagesCTF](../../.gitbook/assets/imagemCTF.png)
+![imagesCTF](assets/imagemCTF.png)
 
 A missão era identificar:
 
