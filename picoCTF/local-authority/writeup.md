@@ -6,7 +6,7 @@
 
 A web-based CTF challenge featuring a login page where authentication credentials were hardcoded in a publicly accessible JavaScript file, allowing full bypass of the login mechanism.
 
-![homepage](../../.gitbook/assets/1-homepage.png)
+![homepage](assets/1-homepage.png)
 
 ***
 
@@ -24,7 +24,7 @@ By inspecting the source code of the login error page, a reference to an externa
 **Location:** Homepage login form\
 **Finding:** Login failed — but the error page became a new attack surface.
 
-![login-failed](../../.gitbook/assets/2-login-page-failed.png)
+![login-failed](assets/2-login-page-failed.png)
 
 ***
 
@@ -34,7 +34,8 @@ By inspecting the source code of the login error page, a reference to an externa
 **Location:** HTML source — login logic and linked JS files\
 **Found:**
 
-![source-login-logic](../../.gitbook/assets/3-source-code-login-page-logic.png)
+![source-login-logic](.
+assets/3-source-code-login-page-logic.png)
 
 **Observation:** The source code revealed the authentication logic and a reference to an external file: `secure.js`.
 
@@ -46,7 +47,7 @@ By inspecting the source code of the login error page, a reference to an externa
 **Location:** JavaScript source file referenced in the HTML\
 **Found:**
 
-![secure-js](../../.gitbook/assets/4-hidden-source-code-securejs.png)
+![secure-js](assets/4-hidden-source-code-securejs.png)
 
 **Exposed code:**
 
@@ -75,7 +76,7 @@ function checkPassword(username, password)
 **Location:** Homepage login form\
 **Found:**
 
-![login-success](../../.gitbook/assets/5-tried-login-w-securejs-data.png)
+![login-success](assets/5-tried-login-w-securejs-data.png)
 
 **Result:** Authentication succeeded.
 
@@ -87,7 +88,7 @@ function checkPassword(username, password)
 **Location:** Post-login page\
 **Found:**
 
-![flag](../../.gitbook/assets/6-found-the-flag.png)
+![flag](assets/6-found-the-flag.png)
 
 ***
 
