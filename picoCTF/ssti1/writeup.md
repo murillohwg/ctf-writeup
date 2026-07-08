@@ -29,7 +29,7 @@ After opening the application homepage, the page appeared simple and accepted us
 
 Initial application view:
 
-![homepage](<../../.gitbook/assets/1-homepage (7).png>)
+![homepage](assets/1-homepage.png)
 
 Since the challenge looked template-related, I decided to test whether the application evaluated template expressions.
 
@@ -45,7 +45,7 @@ The first payload used was:
 
 Payload injection attempt:
 
-![trying-ssti](../../.gitbook/assets/2-trying-SSTI.png)
+![trying-ssti](assets/2-trying-SSTI.png)
 
 The application returned:
 
@@ -55,7 +55,7 @@ The application returned:
 
 Confirmed SSTI execution:
 
-![confirmed-ssti](../../.gitbook/assets/3-confirmed-SSTI.png)
+![confirmed-ssti](assets/3-confirmed-SSTI.png)
 
 This confirmed that the server was evaluating Jinja2 template expressions directly.
 
@@ -75,7 +75,7 @@ To gather more information about the backend framework, I used:
 
 The response exposed Flask configuration objects:
 
-![config](../../.gitbook/assets/4-result-\{{config\}}.png)
+![config](assets/4-result-\{{config\}}.png)
 
 This confirmed:
 
@@ -125,7 +125,7 @@ requirements.txt
 
 Directory enumeration:
 
-![enumeration](../../.gitbook/assets/5-almost-found-flag.png)
+![enumeration](assets/5-almost-found-flag.png)
 
 At this point, the flag file had been identified.
 
