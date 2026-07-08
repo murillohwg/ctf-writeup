@@ -1,2 +1,0 @@
-# RCE-polyglot-file
-
