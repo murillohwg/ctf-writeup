@@ -1,6 +1,6 @@
 # Writeup — NÃO SEI, RICK, PARECE FALSO.
 
-![Certificado](../../.gitbook/assets/certificado.png)
+![Certificado](assets/certificado.png)
 
 ***
 
