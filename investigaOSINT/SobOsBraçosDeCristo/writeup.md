@@ -2,7 +2,7 @@
 
 ## Writeup — CTF GEOINT/OSINT: "Sob os Braços de CRISTO"
 
-![Certificado](<../../.gitbook/assets/certified (4).png>)
+![Certificado](assets/certified.png)
 
 ### Descrição do desafio
 
@@ -26,7 +26,7 @@ FLAG{XXXXXXXXXXXX_XXXXX_XX_XXXXXXX}
 
 Descobrir o local exato relacionado à imagem utilizando técnicas de GEOINT/OSINT.
 
-![IMAGEM](../../.gitbook/assets/image.png)
+![IMAGEM](assets/image.png)
 
 ***
 
