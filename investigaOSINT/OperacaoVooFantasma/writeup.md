@@ -2,7 +2,7 @@
 
 ## Operação Voo Fantasma — Writeup
 
-![Certificado](<../../.gitbook/assets/certified (3).png>)
+![Certificado](assets/certified.png)
 
 ### Introdução
 
@@ -47,7 +47,7 @@ Usando o username fornecido:
 jcbelezaw
 ```
 
-![pastebin](../../.gitbook/assets/PASTEBIN-evidence.png)
+![pastebin](assets/PASTEBIN-evidence.png)
 
 Foi encontrado um paste contendo a dica:
 
@@ -65,7 +65,7 @@ IDeeqdx Dorsdhm
 
 Obtém-se:
 
-![revelation](../../.gitbook/assets/realname-revelation.png)
+![revelation](assets/realname-revelation.png)
 
 ```txt
 Jeffrey Epstein
@@ -102,7 +102,7 @@ O site contém:
 
 Nos documentos TECS/FBI foi encontrado o registro:
 
-![registration](../../.gitbook/assets/aircraft-registration.png)
+![registration](assets/aircraft-registration.png)
 
 ```txt
 N212JE
@@ -134,7 +134,7 @@ FLAG{N212JE}
 
 Nos documentos das Epstein Files foi possível localizar referências ao voo:
 
-![EFTA02288953](../../.gitbook/assets/EFTA02288953.png)
+![EFTA02288953](assets/EFTA02288953.png)
 
 ### Origem
 
