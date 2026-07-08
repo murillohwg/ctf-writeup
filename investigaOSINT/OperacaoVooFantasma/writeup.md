@@ -1,8 +1,10 @@
-# Operação Voo Fantasma — Writeup
+# writeup
 
-![Certificado](./assets/certified.png) 
+## Operação Voo Fantasma — Writeup
 
-## Introdução
+![Certificado](<../../.gitbook/assets/certified (3).png>)
+
+### Introdução
 
 O desafio apresentava um nome aparentemente aleatório:
 
@@ -16,18 +18,18 @@ E um arquivo `manifest.txt` contendo:
 
 O objetivo era:
 
-- descobrir a identidade real da pessoa;
-- reconstruir os detalhes do voo;
-- encontrar:
-  - aeronave;
-  - horário de decolagem;
-  - duração do voo;
-  - origem;
-  - destino.
+* descobrir a identidade real da pessoa;
+* reconstruir os detalhes do voo;
+* encontrar:
+  * aeronave;
+  * horário de decolagem;
+  * duração do voo;
+  * origem;
+  * destino.
 
----
+***
 
-# 1. Descobrindo a identidade
+## 1. Descobrindo a identidade
 
 O desafio mencionava:
 
@@ -44,7 +46,8 @@ Usando o username fornecido:
 ```txt
 jcbelezaw
 ```
-![pastebin](./assets/PASTEBIN-evidence.png) 
+
+![pastebin](../../.gitbook/assets/PASTEBIN-evidence.png)
 
 Foi encontrado um paste contendo a dica:
 
@@ -62,20 +65,20 @@ IDeeqdx Dorsdhm
 
 Obtém-se:
 
-![revelation](./assets/realname-revelation.png)
+![revelation](../../.gitbook/assets/realname-revelation.png)
 
 ```txt
 Jeffrey Epstein
 ```
 
----
+***
 
-# 2. Investigando o voo
+## 2. Investigando o voo
 
 A pista indicava:
 
-- data: `25/05/2019`
-- “acompanhar o voo”
+* data: `25/05/2019`
+* “acompanhar o voo”
 
 Pesquisas tradicionais no Google praticamente não retornavam resultados relevantes.
 
@@ -87,24 +90,23 @@ https://epsteinexposed.com/
 
 O site contém:
 
-- documentos TECS;
-- registros do FBI;
-- FlightAware;
-- itinerários;
-- PDFs internos.
+* documentos TECS;
+* registros do FBI;
+* FlightAware;
+* itinerários;
+* PDFs internos.
 
----
+***
 
-# 3. Identificação da aeronave
+## 3. Identificação da aeronave
 
 Nos documentos TECS/FBI foi encontrado o registro:
 
-![registration](./assets/aircraft-registration.png) 
+![registration](../../.gitbook/assets/aircraft-registration.png)
 
 ```txt
 N212JE
 ```
-
 
 Associado à aeronave de Jeffrey Epstein.
 
@@ -120,73 +122,74 @@ Que corresponde a um:
 Gulfstream G550
 ```
 
-## Flag
+### Flag
 
 ```txt
 FLAG{N212JE}
 ```
 
----
+***
 
-# 4. Origem e destino
+## 4. Origem e destino
 
 Nos documentos das Epstein Files foi possível localizar referências ao voo:
 
-![EFTA02288953](./assets/EFTA02288953.png)
+![EFTA02288953](../../.gitbook/assets/EFTA02288953.png)
 
-## Origem
+### Origem
 
 ```txt
 Teterboro, New Jersey
 ```
 
-## Destino
+### Destino
 
 ```txt
 Albuquerque, New Mexico
 ```
 
-## Flags
+### Flags
 
 ```txt
 FLAG{TETERBORO}
 FLAG{ALBUQUERQUE}
 ```
 
----
+***
 
-# 5. Horário de decolagem
+## 5. Horário de decolagem
 
 O horário aceito pelo desafio foi:
 
 ```txt
 09:54AM
 ```
+
 O valor foi reconstruído durante a investigação utilizando:
 
-- registros históricos do voo;
-- dados associados ao N212JE;
-- correlação entre FlightAware, timezone e duração do trajeto.
+* registros históricos do voo;
+* dados associados ao N212JE;
+* correlação entre FlightAware, timezone e duração do trajeto.
 
 Não foi possível recuperar atualmente uma fonte pública direta exibindo explicitamente o horário de decolagem.
 
-## Flag
+### Flag
 
 ```txt
 FLAG{09:54AM}
 ```
 
----
+***
 
-# 6. Tempo total de voo
+## 6. Tempo total de voo
 
 Essa foi a parte mais complicada do desafio.
 
 O cálculo inicial usando:
 
-- fusos horários corretos;
-- horário de pouso reconstruído;
-- performance do Gulfstream G550;
+* fusos horários corretos;
+* horário de pouso reconstruído;
+* performance do Gulfstream G550;
 
 Indicava aproximadamente:
 
@@ -198,13 +201,13 @@ Porém a flag não era aceita.
 
 Após analisar:
 
-- timezone EDT/MDT;
-- tempos médios do GLF5;
-- inconsistências dos documentos;
-- possíveis diferenças entre:
-  - air time;
-  - gate-to-gate;
-  - ETE FAA;
+* timezone EDT/MDT;
+* tempos médios do GLF5;
+* inconsistências dos documentos;
+* possíveis diferenças entre:
+  * air time;
+  * gate-to-gate;
+  * ETE FAA;
 
 Foi realizado um brute force inteligente dentro do intervalo plausível.
 
@@ -216,13 +219,13 @@ FLAG{3H47M}
 
 Isso indica que o autor do CTF provavelmente utilizou:
 
-- um horário de pouso diferente;
-- cálculo manual inconsistente;
-- ou algum campo específico do FlightAware/FAA.
+* um horário de pouso diferente;
+* cálculo manual inconsistente;
+* ou algum campo específico do FlightAware/FAA.
 
----
+***
 
-# Flags Finais
+## Flags Finais
 
 ```txt
 FLAG{GLF5}
@@ -232,11 +235,11 @@ FLAG{TETERBORO}
 FLAG{ALBUQUERQUE}
 ```
 
----
+***
 
-# Fontes Utilizadas
+## Fontes Utilizadas
 
-## Principais
+### Principais
 
 ```txt
 https://epsteinexposed.com/
@@ -245,7 +248,7 @@ https://www.flightaware.com/live/aircrafttype/GLF5
 https://pastebin.com/
 ```
 
-## Documentos usados
+### Documentos usados
 
 ```txt
 EFTA00174183

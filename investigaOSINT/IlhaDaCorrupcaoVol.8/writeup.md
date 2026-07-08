@@ -1,6 +1,6 @@
 # OSINT CTF Writeup — “A Ilha da Corrupção Vol. 08”
 
-![Certificado](./assets/certified.png) 
+![Certificado](../../.gitbook/assets/certified.png)
 
 ## Descrição do Desafio
 
@@ -20,7 +20,7 @@ FLAG{Xxxx_Xxxxxxxxx_Xxxxxxxxxx}
 FLAG{DD-MM-AAAA_TO_DD-MM-AAAA}
 ```
 
----
+***
 
 ## Estratégia de Resolução
 
@@ -28,14 +28,13 @@ FLAG{DD-MM-AAAA_TO_DD-MM-AAAA}
 
 A pista mais importante foi:
 
-> “11,5 milhões de documentos”
-> “maior vazamento financeiro da história moderna”
+> “11,5 milhões de documentos” “maior vazamento financeiro da história moderna”
 
 Isso leva diretamente ao:
 
 * **Panama Papers (2016)**
 
----
+***
 
 ### 2. Identificação do Político
 
@@ -48,14 +47,14 @@ Chegamos a:
 
 * **Sigmundur Davíð Gunnlaugsson** (ex-primeiro-ministro da Islândia)
 
-![IMGA](./assets/IMGA.png)
+![IMGA](../../.gitbook/assets/IMGA.png)
 
 Confirmado por:
 
 * Renúncia em 2016 após os Panama Papers
 * Envolvimento com ativos ligados a bancos falidos
 
----
+***
 
 ### 3. Identificação da Offshore
 
@@ -69,7 +68,7 @@ Resultado:
 
 Empresa registrada nas Ilhas Virgens Britânicas.
 
----
+***
 
 ### 4. Nome da Esposa
 
@@ -81,7 +80,7 @@ Resultado:
 
 * **Anna Sigurlaug Pálsdóttir**
 
----
+***
 
 ### 5. Determinação da Data (Parte Crítica)
 
@@ -90,10 +89,9 @@ Inicialmente, foram testadas datas comuns:
 * 06-12-2007 (incorporação)
 * 31-12-2009 (transferência)
 
--> Todas falharam <-
-      :(
+-> Todas falharam <- :(
 
----
+***
 
 ## Investigação Avançada
 
@@ -105,15 +103,14 @@ Foi necessário recorrer a documentos originais dos Panama Papers:
 
 No artigo oficial, foi encontrado:
 
-> A empresa foi registrada no final de novembro de 2007
-> **mas retroativamente datada para outubro**
+> A empresa foi registrada no final de novembro de 2007 **mas retroativamente datada para outubro**
 
 Versões diferentes apresentavam:
 
 * 07 de outubro de 2007
 * 09 de outubro de 2007
 
----
+***
 
 ## Insight Final
 
@@ -121,9 +118,9 @@ O CTF utilizava a versão alemã do documento, que indicava:
 
 > **9 de outubro de 2007**
 
-![IMGB](./assets/IMGB.png)
+![IMGB](../../.gitbook/assets/IMGB.png)
 
----
+***
 
 ## Flags Finais
 
@@ -145,17 +142,17 @@ FLAG{Anna_Sigurlaug_Palsdottir}
 FLAG{09-10-2007_TO_31-12-2009}
 ```
 
----
+***
 
 ## Lições Aprendidas
 
 * Nem sempre a “resposta correta” é a mais divulgada
 * Documentos originais são essenciais em OSINT
 * Diferenças entre idiomas podem impactar diretamente a resposta
-* Termos como *“backdated”* são críticos
+* Termos como _“backdated”_ são críticos
 * CTFs frequentemente utilizam fontes específicas, não consenso geral
 
----
+***
 
 ## Conclusão
 

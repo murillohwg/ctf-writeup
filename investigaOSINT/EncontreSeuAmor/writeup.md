@@ -1,12 +1,16 @@
-# Writeup — CTF OSINT: “Encontre seu amor”
->
-![Certificado](./assets/certified.png)
+# writeup
 
-## Descrição do desafio
+## Writeup — CTF OSINT: “Encontre seu amor”
+
+>
+
+![Certificado](<../../.gitbook/assets/certified (5).png>)
+
+### Descrição do desafio
 
 O desafio apresentava um suposto site de relacionamentos que voltou a circular em fóruns e redes sociais.
 
-![imagesCTF](./assets/imagemCTF.png)
+![imagesCTF](../../.gitbook/assets/imagemCTF.png)
 
 A missão era identificar:
 
@@ -16,15 +20,15 @@ A missão era identificar:
 
 Formato das flags:
 
-```text
+```
 FLAG{XXXXX}
 FLAG{XXXXXXX_XXXXXXX_XXXXX}
 FLAG{XX/XX/XXXX}
 ```
 
----
+***
 
-# Objetivo
+## Objetivo
 
 Realizar uma investigação OSINT utilizando:
 
@@ -33,21 +37,21 @@ Realizar uma investigação OSINT utilizando:
 * Wayback Machine;
 * análise de histórico do domínio.
 
----
+***
 
-# Etapa 1 — Investigação WHOIS
+## Etapa 1 — Investigação WHOIS
 
 A primeira etapa consistiu em consultar os registros públicos do domínio:
 
-```text
+```
 amorespossiveis.com.br
 ```
 
 A consulta WHOIS revelou informações importantes:
 
-![WHOIS](./assets/REGISTROBR.png)
+![WHOIS](../../.gitbook/assets/REGISTROBR.png)
 
-```text
+```
 Titular: Gabriel Machado Badan
 Contato: GMB31
 Criado: 08/11/2005
@@ -55,21 +59,21 @@ Criado: 08/11/2005
 
 Com isso, foi possível identificar rapidamente:
 
-## nic-hdl-br
+### nic-hdl-br
 
-```text
+```
 FLAG{GMB31}
 ```
 
-## Nome do criador
+### Nome do criador
 
-```text
+```
 FLAG{GABRIEL_MACHADO_BADAN}
 ```
 
----
+***
 
-# Etapa 2 — Data de primeira aparição do site
+## Etapa 2 — Data de primeira aparição do site
 
 A terceira flag exigia descobrir:
 
@@ -77,7 +81,7 @@ A terceira flag exigia descobrir:
 
 Inicialmente, a hipótese mais óbvia foi utilizar a data de criação do domínio:
 
-```text
+```
 08/11/2005
 ```
 
@@ -88,44 +92,45 @@ Isso indicava que o desafio não queria a criação do domínio, mas sim:
 * a primeira vez que o site realmente ficou acessível;
 * ou a primeira captura pública do site.
 
----
+***
 
-# Investigação no Wayback Machine
+## Investigação no Wayback Machine
 
 A próxima etapa foi utilizar o:
 
-```text
+```
 Wayback Machine
 ```
 
 Pesquisando:
 
-```text
+```
 amorespossiveis.com.br
 ```
-![Wayback-machine](./assets/PesquisandoPossivelDATA.png)
+
+![Wayback-machine](../../.gitbook/assets/PesquisandoPossivelDATA.png)
 
 foi possível visualizar o histórico arquivado do domínio.
 
 Ao navegar até 2005, apareceu o primeiro snapshot disponível:
 
-```text
+```
 09/11/2005 - 14:36:56
 ```
 
 Essa captura mostrava a página inicial hospedada no provedor:
 
-![DATA](./assets/PossivelDATA.png)
+![DATA](../../.gitbook/assets/PossivelDATA.png)
 
-```text
+```
 Iphotel Hospedagem Profissional
 ```
 
 com a mensagem:
 
-![confirmacao](./assets/ConfimacaoDeDEPLOY.png)
+![confirmacao](../../.gitbook/assets/ConfimacaoDeDEPLOY.png)
 
-```text
+```
 “Seu site já está ativo”
 ```
 
@@ -134,39 +139,39 @@ Isso confirmou que:
 * o domínio havia sido criado em 08/11/2005;
 * o site efetivamente apareceu online em 09/11/2005.
 
----
+***
 
-# Flag final
+## Flag final
 
-```text
+```
 FLAG{09/11/2005}
 ```
 
----
+***
 
-# Flags completas
+## Flags completas
 
-## nic-hdl-br
+### nic-hdl-br
 
-```text
+```
 FLAG{GMB31}
 ```
 
-## Nome do criador
+### Nome do criador
 
-```text
+```
 FLAG{GABRIEL_MACHADO_BADAN}
 ```
 
-## Primeira aparição do site
+### Primeira aparição do site
 
-```text
+```
 FLAG{09/11/2005}
 ```
 
----
+***
 
-# Técnicas utilizadas
+## Técnicas utilizadas
 
 Este desafio envolveu:
 
@@ -178,9 +183,9 @@ Este desafio envolveu:
 * validação temporal;
 * OSINT raiz.
 
----
+***
 
-# Lições aprendidas
+## Lições aprendidas
 
 O desafio mostrou uma diferença importante entre:
 
@@ -189,7 +194,7 @@ O desafio mostrou uma diferença importante entre:
 
 Embora o domínio tenha sido registrado em:
 
-```text
+```
 08/11/2005
 ```
 
@@ -197,9 +202,9 @@ isso não significa que o site já estava acessível naquele momento.
 
 A validação correta veio através da primeira captura pública arquivada pelo Wayback Machine.
 
----
+***
 
-# Conclusão
+## Conclusão
 
 Esse foi um ótimo desafio introdutório de OSINT voltado para:
 

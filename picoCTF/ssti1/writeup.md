@@ -1,40 +1,41 @@
-![Platform](https://img.shields.io/badge/Platform-picoCTF-orange?style=for-the-badge)
-![Topic](https://img.shields.io/badge/Topic-Web_Exploitation-red?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=for-the-badge)
+# writeup
 
-# WriteUp - SSTI Challenge
+![Platform](https://img.shields.io/badge/Platform-picoCTF-orange?style=for-the-badge) ![Topic](https://img.shields.io/badge/Topic-Web_Exploitation-red?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=for-the-badge)
+
+## WriteUp - SSTI Challenge
 
 > Server-Side Template Injection leading to Remote Code Execution
 
----
+***
 
-## Challenge Overview
+### Challenge Overview
 
 This challenge involved identifying and exploiting a Server-Side Template Injection (SSTI) vulnerability in a Flask/Jinja2 web application.
 
 By abusing the template engine, it was possible to:
-- execute Python expressions,
-- access internal Flask objects,
-- achieve Remote Code Execution (RCE),
-- and ultimately read the flag directly from the server.
+
+* execute Python expressions,
+* access internal Flask objects,
+* achieve Remote Code Execution (RCE),
+* and ultimately read the flag directly from the server.
 
 The challenge demonstrates how dangerous SSTI vulnerabilities can become when user input is rendered unsafely.
 
----
+***
 
-## Initial Recon
+### Initial Recon
 
 After opening the application homepage, the page appeared simple and accepted user-controlled input.
 
 Initial application view:
 
-![homepage](assets/1-homepage.png)
+![homepage](<../../.gitbook/assets/1-homepage (7).png>)
 
 Since the challenge looked template-related, I decided to test whether the application evaluated template expressions.
 
----
+***
 
-## Testing for SSTI
+### Testing for SSTI
 
 The first payload used was:
 
@@ -44,26 +45,27 @@ The first payload used was:
 
 Payload injection attempt:
 
-![trying-ssti](assets/2-trying-SSTI.png)
+![trying-ssti](../../.gitbook/assets/2-trying-SSTI.png)
 
 The application returned:
 
-```text
+```
 49
 ```
 
 Confirmed SSTI execution:
 
-![confirmed-ssti](assets/3-confirmed-SSTI.png)
+![confirmed-ssti](../../.gitbook/assets/3-confirmed-SSTI.png)
 
 This confirmed that the server was evaluating Jinja2 template expressions directly.
 
 At this point, the vulnerability was identified as:
-- Server-Side Template Injection (SSTI)
 
----
+* Server-Side Template Injection (SSTI)
 
-## Identifying the Template Engine
+***
+
+### Identifying the Template Engine
 
 To gather more information about the backend framework, I used:
 
@@ -73,17 +75,18 @@ To gather more information about the backend framework, I used:
 
 The response exposed Flask configuration objects:
 
-![config](assets/4-result-{{config}}.png)
+![config](../../.gitbook/assets/4-result-\{{config\}}.png)
 
 This confirmed:
-- Flask framework
-- Jinja2 template engine
+
+* Flask framework
+* Jinja2 template engine
 
 Once Flask/Jinja2 was confirmed, the next objective became achieving code execution.
 
----
+***
 
-## Escalating to Remote Code Execution
+### Escalating to Remote Code Execution
 
 Jinja2 exposes internal Python objects that can sometimes be abused to reach dangerous modules such as `os`.
 
@@ -95,15 +98,15 @@ The following payload was used:
 
 The application returned:
 
-```text
+```
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
 This confirmed successful Remote Code Execution (RCE) with root privileges.
 
----
+***
 
-## Enumerating the Server
+### Enumerating the Server
 
 After obtaining RCE, I listed the files in the current directory using:
 
@@ -113,7 +116,7 @@ After obtaining RCE, I listed the files in the current directory using:
 
 The result revealed several files:
 
-```text
+```
 __pycache__
 app.py
 flag
@@ -122,13 +125,13 @@ requirements.txt
 
 Directory enumeration:
 
-![enumeration](assets/5-almost-found-flag.png)
+![enumeration](../../.gitbook/assets/5-almost-found-flag.png)
 
 At this point, the flag file had been identified.
 
----
+***
 
-## Reading the Flag
+### Reading the Flag
 
 Finally, the following payload was used to read the flag directly from the server:
 
@@ -138,57 +141,59 @@ Finally, the following payload was used to read the flag directly from the serve
 
 Successful payload execution:
 
-![flag](assets/6-payload-just-worked.png)
+![flag](../../.gitbook/assets/6-payload-just-worked.png)
 
 The flag was successfully retrieved from the server.
 
----
+***
 
-## Vulnerability Analysis
+### Vulnerability Analysis
 
 This challenge demonstrates a classic SSTI vulnerability caused by rendering unsanitized user input directly inside a Jinja2 template.
 
 The danger of SSTI is that template engines often expose:
-- Python internals
-- global objects
-- built-in functions
-- dangerous modules
+
+* Python internals
+* global objects
+* built-in functions
+* dangerous modules
 
 In this case, it was possible to reach:
-- Python globals
-- the `os` module
-- shell command execution
+
+* Python globals
+* the `os` module
+* shell command execution
 
 This transformed a simple template injection into full Remote Code Execution.
 
----
+***
 
-## Concepts Practiced
+### Concepts Practiced
 
-- Server-Side Template Injection (SSTI)
-- Flask/Jinja2 exploitation
-- Python object traversal
-- Remote Code Execution (RCE)
-- Linux command execution
-- Enumeration
-- File disclosure
+* Server-Side Template Injection (SSTI)
+* Flask/Jinja2 exploitation
+* Python object traversal
+* Remote Code Execution (RCE)
+* Linux command execution
+* Enumeration
+* File disclosure
 
----
+***
 
-## Mitigations
+### Mitigations
 
 Proper defenses against SSTI vulnerabilities include:
 
-- Never render raw user input directly in templates
-- Use safe rendering methods
-- Sanitize user-controlled input
-- Sandbox template environments
-- Restrict dangerous Python object access
-- Apply strict server-side validation
+* Never render raw user input directly in templates
+* Use safe rendering methods
+* Sanitize user-controlled input
+* Sandbox template environments
+* Restrict dangerous Python object access
+* Apply strict server-side validation
 
----
+***
 
-## Conclusion
+### Conclusion
 
 This challenge provided an excellent demonstration of how a simple SSTI vulnerability can evolve into full Remote Code Execution.
 

@@ -1,8 +1,10 @@
-# Writeup — CTF GEOINT/OSINT: "Sob os Braços de CRISTO"
+# writeup
 
-![Certificado](./assets/certified.png) 
+## Writeup — CTF GEOINT/OSINT: "Sob os Braços de CRISTO"
 
-## Descrição do desafio
+![Certificado](<../../.gitbook/assets/certified (4).png>)
+
+### Descrição do desafio
 
 O desafio consistia em identificar a localização exata de uma fotografia relacionada a um evento de hacking/cybersecurity ocorrido no Rio de Janeiro.
 
@@ -14,21 +16,21 @@ As únicas informações iniciais disponíveis eram:
 
 Formato da flag:
 
-```text
+```
 FLAG{XXXXXXXXXXXX_XXXXX_XX_XXXXXXX}
 ```
 
----
+***
 
-# Objetivo
+## Objetivo
 
 Descobrir o local exato relacionado à imagem utilizando técnicas de GEOINT/OSINT.
 
-![IMAGEM](./assets/image.png)
+![IMAGEM](../../.gitbook/assets/image.png)
 
----
+***
 
-# Análise inicial
+## Análise inicial
 
 A primeira abordagem foi baseada em correlação contextual.
 
@@ -40,19 +42,19 @@ Sabendo que:
 
 foi realizada uma busca por eventos de segurança da informação realizados nesse período.
 
----
+***
 
-# Primeira hipótese
+## Primeira hipótese
 
 Durante a investigação, um dos primeiros resultados encontrados foi o evento:
 
-```text
+```
 Security Leaders Rio de Janeiro 2025
 ```
 
 realizado em:
 
-```text
+```
 08/05/2025
 ```
 
@@ -60,7 +62,7 @@ A hipótese parecia plausível devido à proximidade temporal e ao contexto do d
 
 Além disso, um repositório público contendo eventos de infosec no Brasil ajudou na investigação:
 
-```text
+```
 https://github.com/IncursioHack/Eventos-Infosec-Brasil
 ```
 
@@ -70,9 +72,9 @@ No entanto, ao analisar melhor:
 * os nomes dos locais não encaixavam no padrão;
 * a hipótese começou a perder força.
 
----
+***
 
-# Uso de Google Lens
+## Uso de Google Lens
 
 Para aprofundar a investigação, foi utilizado:
 
@@ -84,19 +86,19 @@ Essa etapa foi decisiva.
 
 O Google Lens conseguiu identificar elementos compatíveis com:
 
-```text
+```
 Universidade Veiga de Almeida
 ```
 
 associados a conteúdos relacionados a eventos de hacking/cybersecurity.
 
----
+***
 
-# Engenharia reversa da flag
+## Engenharia reversa da flag
 
 O ponto mais importante veio ao analisar o padrão da flag:
 
-```text
+```
 FLAG{XXXXXXXXXXXX_XXXXX_XX_XXXXXXX}
 ```
 
@@ -109,7 +111,7 @@ Separando os blocos:
 
 Ao comparar com:
 
-```text
+```
 UNIVERSIDADE_VEIGA_DE_ALMEIDA
 ```
 
@@ -122,17 +124,17 @@ foi possível perceber:
 
 O padrão encaixava perfeitamente.
 
----
+***
 
-# Flag correta
+## Flag correta
 
-```text
+```
 FLAG{UNIVERSIDADE_VEIGA_DE_ALMEIDA}
 ```
 
----
+***
 
-# Técnicas utilizadas
+## Técnicas utilizadas
 
 Este desafio envolveu principalmente:
 
@@ -144,9 +146,9 @@ Este desafio envolveu principalmente:
 * pesquisa reversa de imagem;
 * validação visual.
 
----
+***
 
-# Dificuldades encontradas
+## Dificuldades encontradas
 
 Um detalhe interessante foi que nem todas as informações públicas indicavam claramente a realização do evento BSides naquele local.
 
@@ -162,9 +164,9 @@ A resolução acabou vindo da combinação entre:
 * análise do formato da flag;
 * validação contextual.
 
----
+***
 
-# Lições aprendidas
+## Lições aprendidas
 
 Esse desafio reforça alguns pontos importantes em GEOINT/OSINT:
 
@@ -178,9 +180,9 @@ Além disso, o desafio mostrou a importância de não abandonar hipóteses inici
 
 Mesmo antes da confirmação final, a investigação já havia passado pela universidade correta, mas o foco acabou sendo direcionado inicialmente para o nome do evento.
 
----
+***
 
-# Conclusão
+## Conclusão
 
 Este foi um excelente desafio de GEOINT voltado para investigação contextual e reconhecimento de localização.
 

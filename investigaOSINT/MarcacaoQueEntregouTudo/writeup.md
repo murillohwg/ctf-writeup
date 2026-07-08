@@ -1,12 +1,12 @@
-# Writeup — CTF OSINT/GEOINT: "A Marcação que Entregou Tudo"
+# writeup
 
-![Certificado](./assets/certified.png) 
+## Writeup — CTF OSINT/GEOINT: "A Marcação que Entregou Tudo"
 
-## Descrição do desafio
+![Certificado](<../../.gitbook/assets/certified (1).png>)
 
-> “Uma das regras de ouro do OSINT não é só o que você posta… é o que postam sobre você.
-> Muita gente acredita que está segura porque não compartilha nada nas redes sociais.
-> Mas esquece de um detalhe crítico: amigos, familiares e conhecidos podem postar fotos, marcar pessoas e revelar pistas sem perceber.
+### Descrição do desafio
+
+> “Uma das regras de ouro do OSINT não é só o que você posta… é o que postam sobre você. Muita gente acredita que está segura porque não compartilha nada nas redes sociais. Mas esquece de um detalhe crítico: amigos, familiares e conhecidos podem postar fotos, marcar pessoas e revelar pistas sem perceber.
 >
 > Foi exatamente isso que aconteceu.
 >
@@ -20,21 +20,19 @@
 
 Formato da flag:
 
-```text
+```
 FLAG{XXXXXX_XXXXX_XXXXX}
 ```
 
----
+***
 
-# Objetivo
+## Objetivo
 
-Identificar o local exato onde a fotografia foi tirada utilizando técnicas de GEOINT/OSINT.
-![image](./assets/image.png) 
-fotografia
+Identificar o local exato onde a fotografia foi tirada utilizando técnicas de GEOINT/OSINT. ![image](<../../.gitbook/assets/image (1).png>) fotografia
 
----
+***
 
-# Análise inicial da imagem
+## Análise inicial da imagem
 
 Ao observar a imagem, alguns elementos chamam atenção imediatamente:
 
@@ -47,9 +45,9 @@ Ao observar a imagem, alguns elementos chamam atenção imediatamente:
 
 Além disso, o desafio já informava que o local ficava em São Paulo e dentro de um parque.
 
----
+***
 
-# Primeira hipótese
+## Primeira hipótese
 
 A combinação:
 
@@ -69,9 +67,9 @@ Em São Paulo, poucos locais combinam:
 
 Isso reduziu drasticamente o espaço de busca.
 
----
+***
 
-# Investigação GEOINT
+## Investigação GEOINT
 
 A estratégia utilizada foi simples e eficiente:
 
@@ -86,13 +84,13 @@ A imagem mostra claramente uma roda-gigante branca.
 
 Isso praticamente elimina vários parques da cidade.
 
----
+***
 
-# Identificação da roda-gigante
+## Identificação da roda-gigante
 
 Pesquisando por:
 
-```text
+```
 roda gigante são paulo marginal parque
 ```
 
@@ -107,9 +105,9 @@ A estrutura corresponde exatamente à imagem:
 * vegetação extensa;
 * skyline compatível.
 
----
+***
 
-# Confirmação visual
+## Confirmação visual
 
 A confirmação veio comparando:
 
@@ -126,22 +124,23 @@ Além disso, o círculo roxo na imagem parece destacar justamente uma região do
 
 Mesmo assim, os elementos estruturais do ambiente já eram suficientes.
 
----
+***
 
-# Local identificado
-```
+## Local identificado
+
+````
 
 próximo ao:
 
 ```text
 Parque Villa-Lobos
-```
+````
 
 em São Paulo.
 
----
+***
 
-# Técnica OSINT/GEOINT utilizada
+## Técnica OSINT/GEOINT utilizada
 
 Este desafio envolveu principalmente:
 
@@ -152,9 +151,9 @@ Este desafio envolveu principalmente:
 * redução do espaço de busca;
 * validação visual com imagens públicas.
 
----
+***
 
-# Lição do desafio
+## Lição do desafio
 
 O ponto central do desafio é demonstrar que:
 
@@ -170,17 +169,17 @@ Uma única foto contendo:
 
 já pode ser suficiente para localizar alguém.
 
----
+***
 
-# Flag
+## Flag
 
-```text
+```
 FLAG{PARQUE_VILLA_LOBOS}
 ```
 
----
+***
 
-# Conclusão
+## Conclusão
 
 Esse foi um desafio clássico de GEOINT baseado em reconhecimento visual.
 
