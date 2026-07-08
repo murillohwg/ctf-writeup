@@ -20,7 +20,7 @@ Find the hidden flag on the website.
 
 Upon opening the challenge website, only a simple webpage was displayed.
 
-![Homepage](<../../.gitbook/assets/1-homepage (5).png>)
+![Homepage](assets/1-homepage.png)
 
 Since this was a Web Exploitation challenge and the description mentioned that the website code had been "squished" (minified), the first step was to inspect the page source.
 
@@ -28,7 +28,7 @@ Using the browser's **View Page Source** feature (`CTRL + U`), the HTML source c
 
 While reviewing the source code, the flag was immediately found inside an HTML class attribute.
 
-![Source Code](../../.gitbook/assets/2-sourcecode-found-flag.png)
+![Source Code](assets/2-sourcecode-found-flag.png)
 
 ***
 
