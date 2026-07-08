@@ -1,6 +1,6 @@
 # OSINT CTF Writeup — “A Ilha da Corrupção Vol. 08”
 
-![Certificado](../../.gitbook/assets/certified.png)
+![Certificado](assets/certified.png)
 
 ## Descrição do Desafio
 
@@ -47,7 +47,7 @@ Chegamos a:
 
 * **Sigmundur Davíð Gunnlaugsson** (ex-primeiro-ministro da Islândia)
 
-![IMGA](../../.gitbook/assets/IMGA.png)
+![IMGA](assets/IMGA.png)
 
 Confirmado por:
 
@@ -118,7 +118,7 @@ O CTF utilizava a versão alemã do documento, que indicava:
 
 > **9 de outubro de 2007**
 
-![IMGB](../../.gitbook/assets/IMGB.png)
+![IMGB](assets/IMGB.png)
 
 ***
 
