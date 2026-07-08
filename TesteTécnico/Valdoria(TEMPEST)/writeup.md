@@ -33,13 +33,13 @@ The objective was to investigate the target application, identify vulnerabilitie
 
 During the investigation phase, we discovered several hidden directories that allowed us to download confidential documents.
 
-![confidentialdocuments](../../.gitbook/assets/confidentialdocuments.png)
+![confidentialdocuments](assets/confidentialdocuments.png)
 
 In one of these documents, we found a hexadecimal hash. To decode the information, a custom Python script was developed to brute-force possible date values and match them against the observed hash.
 
-![hasdoc](../../.gitbook/assets/hashdohiddendocument.png)
+![hasdoc](assets/hashdohiddendocument.png)
 
-![flag1](../../.gitbook/assets/FLAG1_usingscript.png)
+![flag1](assets/FLAG1_usingscript.png)
 
 Script available in:
 
@@ -51,13 +51,13 @@ Script available in:
 
 The application used JSON Web Tokens (JWT) for authentication.
 
-![apitoken](../../.gitbook/assets/confirmationAPItokenformat.png)
+![apitoken](assets/confirmationAPItokenformat.png)
 
 However, the backend failed to properly validate the token signature.
 
 By modifying the token header algorithm to **"none"**, it was possible to craft a token with administrative privileges.
 
-![flag2](../../.gitbook/assets/FLAG2.png)
+![flag2](assets/FLAG2.png)
 
 Example structure:
 
