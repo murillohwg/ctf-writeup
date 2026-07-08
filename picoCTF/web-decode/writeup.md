@@ -6,7 +6,7 @@
 
 A web-based CTF challenge focused on finding a flag hidden in the source code of a page, encoded in Base64.
 
-![homepage](<../../.gitbook/assets/1-homepage (3).png>)
+![homepage](assets/1-homepage (3).png>)
 
 ***
 
@@ -24,7 +24,7 @@ By navigating through the site and inspecting the source code of each page, a su
 **Location:** Homepage\
 **Finding:** Nothing notable on the surface or in the page source.
 
-![homepage-source](../../.gitbook/assets/2-homepage-code.png)
+![homepage-source](assets/2-homepage-code.png)
 
 ***
 
@@ -34,7 +34,7 @@ By navigating through the site and inspecting the source code of each page, a su
 **Location:** HTML source — hidden Base64-encoded string\
 **Found:**
 
-![about-source](../../.gitbook/assets/3-about-source-code.png)
+![about-source](assets/3-about-source-code.png)
 
 **Observation:** A suspicious string was spotted embedded in the source code, matching the typical Base64 character pattern (`A-Z`, `a-z`, `0-9`, `+`, `/`, `=`).
 
@@ -45,7 +45,7 @@ By navigating through the site and inspecting the source code of each page, a su
 **Method:** Pasting the string into [CyberChef](https://gchq.github.io/CyberChef/) and applying **From Base64**\
 **Found:**
 
-![cyberchef-decode](../../.gitbook/assets/4-decrypt-hash-base64.png)
+![cyberchef-decode](assets/4-decrypt-hash-base64.png)
 
 ***
 
