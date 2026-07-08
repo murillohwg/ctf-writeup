@@ -6,7 +6,7 @@
 
 A web-based CTF challenge focused on finding flag parts hidden across common web files and server configurations.
 
-![homepage](<../../.gitbook/assets/1-homepage (2).png>)
+![homepage](assets/1-homepage.png)
 
 **Target:** `wily-courier.picoctf.net:54451`
 
@@ -29,14 +29,14 @@ The remaining parts were found by accessing well-known sensitivefiles that are o
 
 **Method:** Viewing the page source (`view-source:`)\
 **Location:** HTML comment on line 31\
-**Found:** ![flag1](../../.gitbook/assets/2-source-code-flag-firstpart.png) **Fragment:** `picoCTF{t`
+**Found:** ![flag1](assets/2-source-code-flag-firstpart.png) **Fragment:** `picoCTF{t`
 
 ***
 
 ### Part 2 — CSS File
 
 **Method:** Accessing `mycss.css` found in the HTML `<link>` tag\
-**Location:** Comment inside the CSS source **Found** ![flag2](../../.gitbook/assets/6-mycss-sourcecode-flag-secondpart.png) **Fragment:** second part of the flag
+**Location:** Comment inside the CSS source **Found** ![flag2](assets/6-mycss-sourcecode-flag-secondpart.png) **Fragment:** second part of the flag
 
 ***
 
@@ -51,7 +51,7 @@ The remaining parts were found by accessing well-known sensitivefiles that are o
 ### Part 4 — robots.txt / IDOR
 
 **Method:** Accessing `/robots.txt` directly in the browser\
-**Location:** `Disallow` entries revealing hidden paths **Found** ![flag3](../../.gitbook/assets/4-idor-robots-flag-thirdpart.png) **Hint:** `# I think this is an apache server... can you Access the next flag?` **Fragment:** third part of the flag
+**Location:** `Disallow` entries revealing hidden paths **Found** ![flag3](assets/4-idor-robots-flag-thirdpart.png) **Hint:** `# I think this is an apache server... can you Access the next flag?` **Fragment:** third part of the flag
 
 ***
 
@@ -59,7 +59,7 @@ The remaining parts were found by accessing well-known sensitivefiles that are o
 
 **Method:** Accessing `/.htaccess` on the Apache server\
 **Location:** Contents of the exposed configuration file\
-**Found** ![flag4](../../.gitbook/assets/5-htaccess-file-flag-fourthpart.png) **Hint:** `" I love making websites on my Mac, I can Store a lot of information there."`\
+**Found** ![flag4](assets/5-htaccess-file-flag-fourthpart.png) **Hint:** `" I love making websites on my Mac, I can Store a lot of information there."`\
 **Fragment:** fourth part of the flag
 
 ***
@@ -68,13 +68,13 @@ The remaining parts were found by accessing well-known sensitivefiles that are o
 
 **Method:** Accessing `/.DS_Store` directly in the browser and downloading the file\
 **Location:** Hidden macOS metadata file accidentally uploaded by the developer\
-**Found** ![flag4](../../.gitbook/assets/7-DS-Store-flag-fivepart.png) **Fragment:** fifth part of the flag
+**Found** ![flag4](assets/7-DS-Store-flag-fivepart.png) **Fragment:** fifth part of the flag
 
 ## Completed Flag
 
 All 5 fragments combined resulted in the final flag:
 
-![flag-complete](../../.gitbook/assets/8-completed-flag.png)
+![flag-complete](assets/8-completed-flag.png)
 
 **`picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_9588550}`**
 
