@@ -22,7 +22,7 @@ At first glance, the huge numbers may seem intimidating, but the vulnerability b
 
 The provided Python script performs the following operations:
 
-![encryption](../../.gitbook/assets/1-cat-encryption-py.png)
+![encryption](assets/1-cat-encryption-py.png)
 
 The challenge uses:
 
@@ -46,7 +46,7 @@ shared % 256
 
 The challenge also provides a `message.txt` file containing:
 
-![message-text](../../.gitbook/assets/2-cat-message-text.png)
+![message-text](assets/2-cat-message-text.png)
 
 At this point, the critical vulnerability becomes obvious: the private exponent `b` is directly leaked.
 
@@ -91,7 +91,7 @@ we can directly recover the original flag.
 
 ### Exploit Development
 
-![script](../../.gitbook/assets/3-script-py.png)
+![script](assets/3-script-py.png)
 
 The script recomputes the shared key and reverses the XOR encryption.
 
@@ -105,7 +105,7 @@ Running the exploit successfully reveals the original flag.
 
 After recovering the flag, it was submitted successfully on the picoCTF platform.
 
-![flag-confirmed](../../.gitbook/assets/5-flag-accepted.png)
+![flag-confirmed](assets/5-flag-accepted.png)
 
 This confirmed that the exploit and key reconstruction process were correct.
 
