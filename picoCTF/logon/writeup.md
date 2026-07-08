@@ -6,7 +6,7 @@
 
 A web-based CTF challenge featuring a login page where admin privileges were controlled by a client-side cookie value, allowing trivial privilege escalation by manually editing the cookie in the browser.
 
-![homepage](<../../.gitbook/assets/1-homepage (1).png>)
+![homepage](assets/1-homepage.png)
 
 ***
 
@@ -24,7 +24,7 @@ After creating an account and signing in, the page denied access to the flag. In
 **Location:** Homepage login form\
 **Finding:** Successfully authenticated, but the page explicitly stated the flag was not accessible.
 
-![sign-in-no-flag](../../.gitbook/assets/2-sign-in-no-flag.png)
+![sign-in-no-flag](assets/2-sign-in-no-flag.png)
 
 ***
 
@@ -34,7 +34,7 @@ After creating an account and signing in, the page denied access to the flag. In
 **Location:** Browser cookie storage for the challenge domain\
 **Found:**
 
-![inspect-cookies](../../.gitbook/assets/3-inspect-cookies-page.png)
+![inspect-cookies](assets/3-inspect-cookies-page.png)
 
 **Observation:** A cookie named `admin` was present with the value `False` — authorization was being enforced entirely client-side.
 
@@ -46,7 +46,7 @@ After creating an account and signing in, the page denied access to the flag. In
 **Location:** Application → Cookies → `admin` field\
 **Found:**
 
-![switch-admin-true](../../.gitbook/assets/4-switch-admin-true.png)
+![switch-admin-true](assets/4-switch-admin-true.png)
 
 **Result:** Cookie updated to `admin=True`. Page refreshed.
 
@@ -58,7 +58,7 @@ After creating an account and signing in, the page denied access to the flag. In
 **Location:** Main page (now with admin privileges)\
 **Found:**
 
-![flag](../../.gitbook/assets/5-found-flag.png)
+![flag](assets/5-found-flag.png)
 
 ***
 
