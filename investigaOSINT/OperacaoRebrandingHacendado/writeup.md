@@ -1,6 +1,6 @@
 # Writeup: Operação de Rebranding do tipo "Hacendado
 
-![Certificado](<../../.gitbook/assets/certified (2).png>)
+![Certificado](assets/certified.png)
 
 ## Visão Geral
 
@@ -49,7 +49,7 @@ Durante a investigação, foi observado que esta denominação estava marcada co
 
 Utilizando a plataforma do Registro Mercantil da Espanha, foi possível verificar a mudança de nome da empresa.
 
-![img1](../../.gitbook/assets/IMG1.png)
+![img1](assets/IMG1.png)
 
 Resultado: LANZADERA EMPRENDEDORES SL
 
@@ -63,7 +63,7 @@ A próxima etapa consistiu em localizar o registro oficial da alteração no:
 
 Após busca por atos relacionados à empresa, foi encontrado o seguinte registro:
 
-![img2](../../.gitbook/assets/IMG2.png)
+![img2](assets/IMG2.png)
 
 441880 - ALQUERIA CAPITAL SOCIEDAD LIMITADA. Sociedad unipersonal. Cambio de identidad del socio único: ANGELS CAPITAL SL. Cambio de denominación social: LANZADERA EMPRENDEDORES SL. Datos registrales: T 9303, L 6585, F 71, S 8, H V 142942, I/A 7 ( 8.10.13)
 
