@@ -34,7 +34,7 @@ This immediately suggested:
 
 Homepage after login:
 
-![homepage](../../.gitbook/assets/2-homepage-comments.png)
+![homepage](assets/2-homepage-comments.png)
 
 ***
 
@@ -56,7 +56,7 @@ The application exposed the directory publicly without authentication checks.
 
 Inside the directory, there were multiple active session tokens.
 
-![sessions](../../.gitbook/assets/3-sessions-dir-token.png)
+![sessions](assets/3-sessions-dir-token.png)
 
 At this point, the vulnerability became clear: the server was exposing active session identifiers directly through a web-accessible directory.
 
@@ -88,7 +88,7 @@ Using the browser DevTools:
 
 Cookie replacement process:
 
-![token-switch](../../.gitbook/assets/4-switching-token.png)
+![token-switch](assets/4-switching-token.png)
 
 After refreshing the page, the application recognized the session as the administrator account.
 
@@ -104,7 +104,7 @@ This resulted in:
 
 Once authenticated as admin, the flag became accessible immediately.
 
-![flag](../../.gitbook/assets/5-capture-the-flag.png)
+![flag](assets/5-capture-the-flag.png)
 
 ***
 
