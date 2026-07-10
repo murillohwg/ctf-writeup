@@ -29,5 +29,5 @@
 | 19 | web-decode                   | picoCTF        | web & crypto      | [🔗 Link](picoCTF/web-decode/writeup.md)                         |
 | 20 | local-authority              | picoCTF        | web(bypass)       | [🔗 Link](picoCTF/local-authority/writeup.md)                    |
 | 21 | logon                        | picoCTF        | web(hijacking)    | [🔗 Link](picoCTF/logon/writeup.md)                              |
-
+| 22 | RCE-polyglot-file            | portSwigger    | file upload       | [🔗 Link](portSwigger/RCE-polyglot-file/writeup.md)              |
 ***
