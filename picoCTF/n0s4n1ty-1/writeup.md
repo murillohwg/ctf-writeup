@@ -45,8 +45,8 @@ The application's file upload feature did not properly sanitize or restrict uplo
 ![first-php-denied](assets/4-first-php-denied.png)
 ***
 
-### Step 5 — Polyglot Upload Attempt (ExifTool) [CONFIRMAR CONTEXTO]
-**Method:** As a test, I tried to upload a polyglot file using Exiftool + image
+### Step 5 — Polyglot Upload Attempt (ExifTool) 
+**Method:** As a test, I tried to upload a polyglot file using Exiftool + image.
 **Location:** /uploads
 **Finding:** Then te page return the same result, probably I wasnt seeing something...
 
