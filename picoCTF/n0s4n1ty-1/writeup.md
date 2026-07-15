@@ -23,6 +23,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** Uploaded a PHP file crafted to directly `cat` the contents of the `/root` directory\
 **Location:** `/root`\
 **Finding:** Direct access to the `/root` directory was attempted and denied, indicating that a more privileged foothold on the server would be required.
+
 ![tried-access-root](assets/2-tried-access-root-php.png)
 ***
 
@@ -44,6 +45,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** Tested an alternative upload bypass technique by crafting a polyglot file (image + embedded PHP payload) using ExifTool\
 **Location:** `/uploads`\
 **Finding:** The page returned the same result as the previous attempts, with no additional access gained — the direct PHP upload from Step 3 remained the working vector.
+
 ![polyglot-exiftool](assets/5-tried-polyglotfile-exiftool.png)
 ***
 
@@ -56,6 +58,7 @@ User www-data may run the following commands on challenge:
     (ALL) NOPASSWD: ALL
 ```
 **Observation:** The `www-data` user was permitted to run **any command as any user, without a password** — a critical misconfiguration enabling trivial privilege escalation to `root`.
+
 ![php-sudo-l](assets/6-php-sudo-l.png)
 ![return-nopasswd-all](assets/7-GET-return-NOPASSWD:ALL.png)
 ***
@@ -64,6 +67,7 @@ User www-data may run the following commands on challenge:
 **Method:** Using `sudo ls /root` through the web shell to leverage the `NOPASSWD: ALL` misconfiguration\
 **Location:** `/root` directory\
 **Found:** Directory contents of `/root`, including the flag file.
+
 ![php-sudo-ls-root](assets/8-php-sudo-ls-root.png)
 ![return-files](assets/9-GET-return-files.png)
 ***
@@ -72,6 +76,7 @@ User www-data may run the following commands on challenge:
 **Method:** Using `sudo cat` through the web shell to read the flag file with root privileges\
 **Location:** `/root/flag.txt`\
 **Found:** The flag was successfully retrieved.
+
 ![php-sudo-cat-flag](assets/10-php-sudo-cat-flagtxt.png)
 ![return-flag](assets/11-GET-return-flag.png)
 ***
