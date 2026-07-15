@@ -26,7 +26,7 @@
 | 19 | web-decode                   | picoCTF        | web & crypto      | [🔗 Link](picoCTF/web-decode/writeup.md)                         |
 | 20 | local-authority              | picoCTF        | web(bypass)       | [🔗 Link](picoCTF/local-authority/writeup.md)                    |
 | 21 | logon                        | picoCTF        | web(hijacking)    | [🔗 Link](picoCTF/logon/writeup.md)                              |
-| 22 | RCE-polyglot-file            | portSwigger    | fileUpload vuln.  | [🔗 Link](portSwigger/RCE-polyglot-file/writeup.md)              |
-| 23 | RCE-blacklist-extension-file | portSwigger    | fileUpload vuln.  | [🔗 Link](portSwigger/RCE-blacklist-extension-bypass/writeup.md) |
-| 24 | N0 S4n1ty 1                  | CyLab          | web               | [🔗 Link](picoCTF/n0s4n1ty-1/writeup.md)                         |
+| 22 | RCE-polyglot-file            | portSwigger    | fileUpload        | [🔗 Link](portSwigger/RCE-polyglot-file/writeup.md)              |
+| 23 | RCE-blacklist-extension-file | portSwigger    | fileUpload        | [🔗 Link](portSwigger/RCE-blacklist-extension-bypass/writeup.md) |
+| 24 | N0 S4n1ty 1                  | CyLab          | web(fileUpload)   | [🔗 Link](picoCTF/n0s4n1ty-1/writeup.md)                         |
 ***
