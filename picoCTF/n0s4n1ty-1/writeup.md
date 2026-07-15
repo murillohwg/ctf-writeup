@@ -3,6 +3,7 @@
 
 ## Overview
 A web-based CTF challenge in which an unrestricted file upload vulnerability allowed a malicious PHP web shell to be uploaded to the server, resulting in Remote Code Execution (RCE). Post-exploitation enumeration revealed a critical `sudo` misconfiguration that allowed full privilege escalation to `root`.
+
 ![loginpage](assets/1-loginpage.png)
 ***
 
@@ -16,6 +17,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** Accessing the provided challenge link\
 **Location:** Homepage / login page\
 **Finding:** Initial reconnaissance of the application's structure and available features, including the file upload functionality.
+
 ![loginpage](assets/1-loginpage.png)
 ***
 
@@ -23,6 +25,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** [CONFIRMAR — foi via alguma feature de leitura/preview de arquivo do app, antes do upload funcionar?]\
 **Location:** [CONFIRMAR endpoint/feature]\
 **Finding:** Direct access to the `/root` directory was attempted and denied, indicating that a more privileged foothold on the server would be required.
+
 ![tried-access-root](assets/2-tried-access-root-php.png)
 ***
 
@@ -30,6 +33,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** Exploiting the unrestricted file upload functionality to upload a PHP web shell (`.php` file), bypassing insufficient file-type validation\
 **Location:** File upload feature\
 **Finding:** The PHP file was successfully uploaded and became accessible on the server, granting Remote Code Execution (RCE) in the context of the web server process.
+
 ![first-php-uploaded](assets/3-first-php-uploaded.png)
 ***
 
@@ -37,6 +41,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** Using the uploaded web shell to call `file_get_contents()` targeting files inside `/root`\
 **Location:** `/root` directory\
 **Finding:** The request returned `Permission denied`, confirming that the `www-data` process did not have sufficient privileges to read root-owned files directly — a privilege escalation vector would be needed.
+
 ![first-php-denied](assets/4-first-php-denied.png)
 ***
 
@@ -44,6 +49,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 **Method:** [CONFIRMAR — foi um teste adicional de bypass do filtro usando um arquivo polyglot (imagem + PHP embutido via ExifTool)?]\
 **Location:** File upload feature\
 **Finding:** [CONFIRMAR resultado — funcionou, foi redundante, ou foi abandonado em favor do upload direto do Step 3?]
+
 ![polyglot-exiftool](assets/5-tried-polyglotfile-exiftool.png)
 ***
 
@@ -56,14 +62,16 @@ User www-data may run the following commands on challenge:
     (ALL) NOPASSWD: ALL
 ```
 **Observation:** The `www-data` user was permitted to run **any command as any user, without a password** — a critical misconfiguration enabling trivial privilege escalation to `root`.
+
 ![php-sudo-l](assets/6-php-sudo-l.png)
-![return-nopasswd-all](assets/7-GET-return-NOPASSWD-ALL.png)
+![return-nopasswd-all](assets/7-GET-return-NOPASSWD:ALL.png)
 ***
 
 ### Step 7 — Listing /root with Elevated Privileges
 **Method:** Using `sudo ls /root` through the web shell to leverage the `NOPASSWD: ALL` misconfiguration\
 **Location:** `/root` directory\
 **Found:** Directory contents of `/root`, including the flag file.
+
 ![php-sudo-ls-root](assets/8-php-sudo-ls-root.png)
 ![return-files](assets/9-GET-return-files.png)
 ***
@@ -72,6 +80,7 @@ User www-data may run the following commands on challenge:
 **Method:** Using `sudo cat` through the web shell to read the flag file with root privileges\
 **Location:** `/root/flag.txt`\
 **Found:** The flag was successfully retrieved.
+
 ![php-sudo-cat-flag](assets/10-php-sudo-cat-flagtxt.png)
 ![return-flag](assets/11-GET-return-flag.png)
 ***
