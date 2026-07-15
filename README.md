@@ -28,4 +28,5 @@
 | 21 | logon                        | picoCTF        | web(hijacking)    | [🔗 Link](picoCTF/logon/writeup.md)                              |
 | 22 | RCE-polyglot-file            | portSwigger    | fileUpload vuln.  | [🔗 Link](portSwigger/RCE-polyglot-file/writeup.md)              |
 | 23 | RCE-blacklist-extension-file | portSwigger    | fileUpload vuln.  | [🔗 Link](portSwigger/RCE-blacklist-extension-bypass/writeup.md) |
+| 24 | N0 S4n1ty 1                  | CyLab          | web               | [🔗 Link](picoCTF/n0s4n1ty-1/writeup.md)                         |
 ***
