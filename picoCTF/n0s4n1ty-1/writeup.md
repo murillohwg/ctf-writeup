@@ -21,9 +21,9 @@ The application's file upload feature did not properly sanitize or restrict uplo
 ![loginpage](assets/1-loginpage.png)
 ***
 
-### Step 2 — Initial Access Attempt to /root [CONFIRMAR CONTEXTO]
-**Method:** [CONFIRMAR — foi via alguma feature de leitura/preview de arquivo do app, antes do upload funcionar?]\
-**Location:** [CONFIRMAR endpoint/feature]\
+### Step 2 — Initial Access Attempt to /root 
+**Method:** First, Ive tried upload a php code that will cat de root content
+**Location:** /root
 **Finding:** Direct access to the `/root` directory was attempted and denied, indicating that a more privileged foothold on the server would be required.
 
 ![tried-access-root](assets/2-tried-access-root-php.png)
@@ -46,7 +46,7 @@ The application's file upload feature did not properly sanitize or restrict uplo
 ***
 
 ### Step 5 — Polyglot Upload Attempt (ExifTool) 
-**Method:** As a test, I tried to upload a polyglot file using Exiftool + image.
+**Method:** As a test, I tried to upload a polyglot file using Exiftool + image 
 **Location:** /uploads
 **Finding:** Then te page return the same result, probably I wasnt seeing something...
 
