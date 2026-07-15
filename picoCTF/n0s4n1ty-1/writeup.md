@@ -46,9 +46,9 @@ The application's file upload feature did not properly sanitize or restrict uplo
 ***
 
 ### Step 5 — Polyglot Upload Attempt (ExifTool) [CONFIRMAR CONTEXTO]
-**Method:** [CONFIRMAR — foi um teste adicional de bypass do filtro usando um arquivo polyglot (imagem + PHP embutido via ExifTool)?]\
-**Location:** File upload feature\
-**Finding:** [CONFIRMAR resultado — funcionou, foi redundante, ou foi abandonado em favor do upload direto do Step 3?]
+**Method:** As a test, I tried to upload a polyglot file using Exiftool + image
+**Location:** /uploads
+**Finding:** Then te page return the same result, probably I wasnt seeing something...
 
 ![polyglot-exiftool](assets/5-tried-polyglotfile-exiftool.png)
 ***
