@@ -88,6 +88,7 @@ User www-data may run the following commands on challenge:
 ## Tools Used
 * Web application file upload feature (exploited for RCE)
 * PHP web shell — arbitrary command execution
+* Exiftool
 * `sudo -l` — privilege enumeration
 * Browser DevTools / direct GET requests to the web shell
 
